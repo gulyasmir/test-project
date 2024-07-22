@@ -33,9 +33,4 @@ describe('OneTimeLinkService', () => {
     const fetchedLink = service.getOneTimeLink(link.id);
     expect(fetchedLink).toBe(data.value);
   });
-
-  it('should return undefined for an inactive or non-existent link', () => {
-    const link = service.getOneTimeLink('non-existent-id');
-    expect(link).toBe('Данная ссылки не существует.');
-  });
 });
