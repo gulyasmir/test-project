@@ -30,6 +30,6 @@ export class OneTimeLinkService {
       link.deactivate();
       return link.value;
     }
-    return 'Данная ссылки не существует.';
+    throw new InternalServerErrorException('Данная ссылка уже неактивна.');
   }
 }

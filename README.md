@@ -24,6 +24,8 @@
 
 ## Description
 
+Программа - генератор одноразовых ссылок.
+
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
 ## Installation

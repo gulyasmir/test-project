@@ -25,10 +25,6 @@ export class OneTimeLinkController {
     @Param('id') id: string,
   ): String | Promise<InternalServerErrorException> {
     const link = this.oneTimeLinkService.getOneTimeLink(id);
-    if (link) {
-      return link;
-    } else {
-      throw new InternalServerErrorException('Данная ссылка уже неактивна.');
-    }
+    return link;
   }
 }
