@@ -24,7 +24,6 @@ export class OneTimeLinkController {
   getOneTimeLink(
     @Param('id') id: string,
   ): String | Promise<InternalServerErrorException> {
-    const link = this.oneTimeLinkService.getOneTimeLink(id);
-    return link;
+    return this.oneTimeLinkService.getOneTimeLink(id);
   }
 }
